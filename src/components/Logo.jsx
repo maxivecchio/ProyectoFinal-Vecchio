@@ -1,7 +1,7 @@
 
 const Logo = ({width}) => {
   return (
-    <img src="logo.png" width={width}/>
+    <img src="/logo.png" width={width}/>
   )
 }
 

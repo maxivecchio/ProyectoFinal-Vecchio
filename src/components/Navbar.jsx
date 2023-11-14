@@ -1,4 +1,4 @@
-import Logo from "./../Logo";
+import Logo from "./Logo";
 import {
   Navbar,
   NavbarBrand,
@@ -8,7 +8,7 @@ import {
 
 import { MdOutlineAccountCircle } from "react-icons/md";
 
-import CartWidget from "./../CartWidget/index";
+import CartWidget from "./CartWidget";
 
 const NavigationBar = () => {
   return (
