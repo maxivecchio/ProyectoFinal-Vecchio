@@ -242,9 +242,7 @@ const Checkout = () => {
         });
 
         console.log("Order created with ID:", response.id);
-        // set in localstorage last order id
         localStorage.setItem("lastOrderId", response.id);
-        // navigate to success page using router
         navigate("/success");
 
         setCart({
@@ -424,7 +422,7 @@ const Checkout = () => {
                         size="md"
                         aria-label="Tabs form"
                         selectedKey={currentTab}
-                        onSelectionChange={(key) => setCurrentTab(key)} // Actualiza currentTab
+                        onSelectionChange={(key) => setCurrentTab(key)}
                         disabledKeys={[
                           !shippingCompleted && "billing-address",
                           !billingCompleted && "card-payment",

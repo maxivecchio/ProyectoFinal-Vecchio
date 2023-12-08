@@ -14,16 +14,6 @@ const ListItem = ({ product }) => {
   const { addToCart } = useCart();
   return (
     <>
-      {/* <Link
-        className="max-w-sm mx-auto animate__animated animate__fadeIn"
-        to={`/product/${product.slug}`}
-      >
-        <img className="w-full" src={product.img} alt="" />
-        <div className="flex justify-between">
-          <span>{product.name}</span>
-          <span>{product.price}</span>
-        </div>
-      </Link> */}
       <Link
         className="max-w-sm mx-auto animate__animated animate__fadeIn"
         to={`/product/${product.slug}`}

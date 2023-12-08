@@ -69,13 +69,7 @@ const Cart = () => {
                                 {product.product.name}
                               </h3>
                             </div>
-                            {/* <div className="mt-1 flex text-sm">
-                                    <p className="text-foreground/50">{product.color}</p>
-                                    {product.size ? (
-                                      <p className="ml-4 border-l border-gray-200 pl-4 text-foreground/50">{product.size}</p>
-                                    ) : null}
-                                  </div> */}
-                            <p className="mt-1 text-sm font-medium text-foreground/90">
+                              <p className="mt-1 text-sm font-medium text-foreground/90">
                               Price per unit: $
                               {formatNumberToUSStyle(product.product.price)}
                             </p>
@@ -145,8 +139,6 @@ const Cart = () => {
                   ))}
                 </ul>
               </section>
-
-              {/* Order summary */}
               <div className="lg:col-span-5 flex flex-col lg:gap-y-8">
                 <section
                   aria-labelledby="summary-heading"
@@ -166,26 +158,6 @@ const Cart = () => {
                         ${formatNumberToUSStyle(calculateSubTotal())}
                       </dd>
                     </div>
-                    {/* <div className="flex items-center justify-between border-t border-foreground/20 pt-4">
-                          <dt className="flex items-center text-sm text-foreground/60">
-                            <span>Shipping estimate</span>
-                            <a href="#" className="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
-                              <span className="sr-only">Learn more about how shipping is calculated</span>
-                              <QuestionMarkCircleIcon className="h-5 w-5" aria-hidden="true" />
-                            </a>
-                          </dt>
-                          <dd className="text-sm font-medium text-foreground/90">$5.00</dd>
-                        </div> */}
-                    {/* <div className="flex items-center justify-between border-t border-foreground/20 pt-4">
-                          <dt className="flex text-sm text-foreground/60">
-                            <span>Tax estimate</span>
-                            <a href="#" className="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
-                              <span className="sr-only">Learn more about how tax is calculated</span>
-                              <QuestionMarkCircleIcon className="h-5 w-5" aria-hidden="true" />
-                            </a>
-                          </dt>
-                          <dd className="text-sm font-medium text-foreground/90">$8.32</dd>
-                        </div> */}
                     <div className="flex items-center justify-between border-t border-foreground/20 pt-4">
                       <dt className="text-base font-medium text-foreground/80">
                         Order total
