@@ -18,7 +18,7 @@ const NavigationBar = () => {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <p>HOME</p>
+          <p className="font-semibold">HOME</p>
         </NavbarItem>
         <NavbarItem>
           <p>NEW IN</p>
