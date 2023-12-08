@@ -76,8 +76,14 @@ const SuccessPage = () => {
       </h2>
       Order ID: #{orderId}
       <div className="p-4 bg-white shadow rounded-lg">
-        <AddressDetails title="Shipping Details" address={order.orderDetails.shippingAddress} />
-        <AddressDetails title="Billing Details" address={order.orderDetails.billingAddress} />
+        <AddressDetails
+          title="Shipping Details"
+          address={order.orderDetails.shippingAddress}
+        />
+        <AddressDetails
+          title="Billing Details"
+          address={order.orderDetails.billingAddress}
+        />
       </div>
       <ul role="list" className="divide-y divide-foreground/20">
         <h3>Items</h3>
@@ -107,6 +113,11 @@ const SuccessPage = () => {
           </li>
         ))}
       </ul>
+      <div className="flex justify-end">
+        <p className="text-foreground/90 font-bold text-lg">
+          Total: ${order.total}
+        </p>
+      </div>
       <div className="flex justify-center">
         <Link to="/">
           <button className="mt-4 bg-gray-600 mx-auto py-1 px-3 rounded-md text-white">
